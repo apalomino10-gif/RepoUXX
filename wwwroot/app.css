@@ -1,0 +1,383 @@
+﻿
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a40, #6a0572, #d90368, #ff4e00);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color: white;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.sidebar {
+    width: 240px;
+    background: rgba(0,0,0,0.8);
+    border-right: 3px solid #ff4e00;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding: 1rem;
+    box-shadow: 0 0 15px rgba(255, 78, 0, 0.7);
+}
+
+    .sidebar h4 {
+        text-align: center;
+        color: #ff4e00;
+        text-shadow: 0px 0px 10px #d90368;
+    }
+
+    .sidebar .nav-link {
+        color: #f1f1f1;
+        margin: 8px 0;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .sidebar .nav-link:hover {
+            background: linear-gradient(90deg, #d90368, #ff4e00);
+            color: white;
+            padding-left: 15px;
+            border-radius: 6px;
+        }
+
+        .sidebar .nav-link.active {
+            color: #ffcc00;
+            text-shadow: 0 0 8px #ffcc00;
+        }
+
+main {
+    margin-left: 240px;
+    padding: 15px;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid #d90368;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(217, 3, 104, 0.7);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+        border-color: #ff4e00;
+        box-shadow: 0px 0px 25px rgba(255, 78, 0, 0.9);
+    }
+
+.table {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+    .table thead {
+        background: linear-gradient(90deg, #ff4e00, #d90368);
+        color: white;
+    }
+
+    .table tbody tr:hover {
+        background: rgba(255, 78, 0, 0.5);
+    }
+
+
+.btn-primary {
+    background: linear-gradient(90deg, #ff4e00, #d90368);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+    .btn-primary:hover {
+        background: linear-gradient(90deg, #d90368, #ff4e00);
+        box-shadow: 0px 0px 12px #ff4e00;
+    }
+
+@media (max-width: 768px) {
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 3px solid #ff4e00;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+        .sidebar h4 {
+            margin-bottom: 10px;
+        }
+
+        .sidebar .nav {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .sidebar .nav-link {
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+            margin: 5px;
+        }
+
+    
+    main {
+        margin-left: 0;
+        padding-top: 15px;
+    }
+
+    
+    h1, h2, h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+    input, select, textarea {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+    }
+
+        .nav-tabs .nav-link {
+            width: 100%;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", "Segoe UI", Tahoma, sans-serif;
+    color: #f1f1f1;
+    line-height: 1.6;
+    background: linear-gradient(-45deg, #0a192f, #2a5298, #ff004c, #ffcc00);
+    background-size: 400% 400%;
+    animation: neonBackground 12s ease infinite;
+}
+
+@keyframes neonBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 3px solid #ff004c;
+    box-shadow: 0 0 25px #ff004c;
+}
+
+    header h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #ffcc00;
+        text-shadow: 0 0 10px #ff004c, 0 0 20px #ff004c;
+    }
+
+
+.navbar {
+    background: linear-gradient(180deg, #ff004c, #000000);
+    box-shadow: 0 0 15px #ff004c;
+    padding-top: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffcc00;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.nav-item {
+    margin: 0.5rem 0;
+}
+
+    .nav-item a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.8rem 1rem;
+        display: block;
+        border-radius: 8px;
+        transition: 0.3s ease;
+        text-shadow: 0 0 8px #ff004c;
+    }
+
+        .nav-item a.active {
+            background: #ff004c;
+            color: #ffcc00;
+            box-shadow: 0 0 10px #ff004c;
+        }
+
+        .nav-item a:hover {
+            background: rgba(255, 0, 76, 0.6);
+            color: #ffcc00;
+            transform: scale(1.05);
+        }
+
+
+.navbar-toggler {
+    background-color: #ff004c;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+    .navbar-toggler:hover {
+        background-color: #ffcc00;
+        color: #000;
+    }
+
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ff004c;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 20px #ff004c, 0 0 30px #ffcc00 inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px #ff004c, 0 0 40px #ffcc00;
+    }
+
+table {
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0 0 25px #ff004c;
+    color: #fff;
+}
+
+thead {
+    background: linear-gradient(90deg, #ff004c, #ffcc00);
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+
+    thead th {
+        padding: 1rem;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+tbody tr {
+    transition: background 0.3s;
+}
+
+    tbody tr:nth-child(even) {
+        background: rgba(255,255,255,0.05);
+    }
+
+    tbody tr:hover {
+        background: rgba(255,0,76,0.4);
+    }
+
+td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+
+button, .btn {
+    background: linear-gradient(90deg, #ff004c, #ffcc00);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 10px #ff004c, 0 0 20px #ffcc00;
+}
+
+    button:hover, .btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #ff004c, 0 0 30px #ffcc00;
+    }
+
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #ff004c;
+    margin: 1rem auto;
+    display: block;
+    box-shadow: 0 0 20px #ff004c, 0 0 30px #ffcc00;
+}
+
+
+a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 0 8px #ff004c;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+    a:hover {
+        color: #ffff;
+        text-shadow: 0 0 12px #ff004c, 0 0 20px #ffcc00;
+    }
